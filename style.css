@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/bg.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  animation: intro 1.5s ease;
+}
+
+nav {
+  flex: 2;
+}
+
+.navbar {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar-links {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 3px 8px 3px 8px;
+  border-radius: 8px;
+}
+
+.navbar-links:hover {
+  background-color: aliceblue;
+  color: black;
+  transition: background-color 0.8s;
+}
+
+.logo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+
+.logo-container {
+  flex: 1;
+}
+
+header {
+  display: flex;
+  width: 90%;
+  height: 10vh;
+  margin: auto;
+  align-items: center;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 200px;
+}
+
+.intro-text {
+  color: aliceblue;
+}
+
+.intro-button {
+  color: black;
+  font-family: "Raleway", sans-serif;
+  background-color: aliceblue;
+  margin-top: 25px;
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.intro-button:hover {
+  color: white;
+  background-color: rgb(93, 93, 206);
+  transition: 0.8s;
+}
+
+@keyframes intro {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
